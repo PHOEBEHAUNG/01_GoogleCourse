@@ -6,14 +6,16 @@ abstract class Dwelling(private var residents: Int) {
     fun hasRoom(): Boolean {
        return residents < capacity
     }
-    fun getRoom() {
-        if (capacity > residents) {
-            residents++
-            println("You got a room!")
-        } else {
-            println("Sorry, at capacity and no rooms left.")
-        }
-	}
+    
+/// 判斷是否能有空間入住
+//     fun getRoom() {
+//         if (capacity > residents) {
+//             residents++
+//             println("You got a room!")
+//         } else {
+//             println("Sorry, at capacity and no rooms left.")
+//         }
+//     }
     abstract fun floorArea() : Double
 }
 
@@ -56,7 +58,9 @@ fun main() {
         println("Material: ${buildingMaterial}")
         println("Has room? ${hasRoom()}")
         println("Floor area: ${floorArea()}")
-        getRoom()
+	
+	/// 判斷是否能有空間入住
+        ///getRoom()
     }
     
     with(roundHut) {
@@ -65,7 +69,9 @@ fun main() {
         println("Capacity: ${capacity}")
         println("Has room? ${hasRoom()}")
         println("Floor area: ${floorArea()}")
-        getRoom()
+        
+	/// 判斷是否能有空間入住
+        ///getRoom()
     }
     
     with(roundTower) {
@@ -74,6 +80,8 @@ fun main() {
         println("Capacity: ${capacity}")
         println("Has room? ${hasRoom()}")
         println("Floor area: ${floorArea()}")
-        getRoom()
+        
+	/// 判斷是否能有空間入住
+        ///getRoom()
     }
 }
