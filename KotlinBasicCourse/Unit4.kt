@@ -18,24 +18,25 @@ class Vegetables1() : Item("Vegetables", 5)
 class Vegetables2(val topping1: String,
                  val topping2: String, 
                  val topping3: String): Item("Vegetables", 5) 
-	{
-    	override fun toString(): String 
-   		{
-       		return name
-        }
-   	}
+{
+   override fun toString(): String 
+   {
+       return name
+   }
+}
 
 
 class Vegetables3(val toppings: List<String>): Item("Vegetables", 5) 
-	{
-    	override fun toString(): String 
-   		{
-       		return name
-        }
-   	}
+{
+   override fun toString(): String 
+   {
+      return name
+   }
+}
 
 
-fun main() {
+fun main() 
+{
     /// List
     val numbers: List<Int> = listOf(1, 2, 3, 4, 5, 6)
     //val numbers = listOf(1, 2, 3, 4, 5, 6)
@@ -103,7 +104,7 @@ fun main() {
     val vegetables1 = Vegetables1()
     println(noodles)
     println(vegetables1)
-    
-	  val vegetables2 = Vegetables2("Cabbage", "Sprouts", "Onion")	
+	
+    val vegetables2 = Vegetables2("Cabbage", "Sprouts", "Onion")	
     val vegetables3 = Vegetables3(listOf("cabbage", "sprouts", "onion"))
 }
